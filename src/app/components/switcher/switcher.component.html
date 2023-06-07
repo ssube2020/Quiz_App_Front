@@ -1,0 +1,6 @@
+<div class="body-content" *ngIf="isLoggedIn">
+    <div class="inner-content">
+        <button class="answer-button simple" (click)="changeMode(true)"> Simple </button>
+        <button class="answer-button choice" (click)="changeMode(false)"> Choice </button>
+    </div>
+</div>

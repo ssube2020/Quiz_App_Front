@@ -1,21 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { UserManagementService } from './shared/services/user-management.service';
+import { Component } from '@angular/core';
+import { UserManagementService } from 'src/app/shared/services/user-management.service';
 import * as jwt_decode from 'jwt-decode';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'Quote_Quiz_App';
+export class LoginComponent {
+
   username = ""
   password = ""
-  constructor(private userService: UserManagementService) { }
 
-  ngOnInit(): void {
-    
-  }
+  constructor(private userService: UserManagementService) {}
 
   public login(): void {
     this.userService.login({userName:this.username, password: this.password}).subscribe(

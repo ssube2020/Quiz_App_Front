@@ -1,0 +1,16 @@
+.simple {
+    background-color: green;
+    color: white;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+.choice {
+    margin-left: 10px;
+    background-color: brown;
+    color: white;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+}

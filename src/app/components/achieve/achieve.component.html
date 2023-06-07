@@ -1,0 +1,22 @@
+<div class="body-content quote-content" *ngIf="isLoggedIn">
+    <div class="inner-content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Quote</th>
+                    <th>Author</th>
+                    <th>User</th>
+                    <th>Answer</th>
+                </tr>
+            </thead>
+            <tr *ngFor="let item of achieve">
+                <td> {{ item.id }} </td>
+                <td> {{ item.quote }} </td>
+                <td> {{ item.quoteAuthor }} </td>
+                <td> {{ item.user }} </td>
+                <td> {{ item.answer }} </td>
+            </tr>
+        </table>
+    </div>
+</div>

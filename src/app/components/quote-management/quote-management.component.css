@@ -1,0 +1,100 @@
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .quote-content {
+    margin-top: 15px !important;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+
+  .edit-svg {
+    margin-left: 7px;
+    cursor: pointer;
+  }
+
+  .delete-svg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .add-btn {
+    background-color: brown;
+    border-radius: 6px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .add-header {
+    color: white;
+  }
+
+  .dialogue {
+    background-color: #8a8686;
+    width: 400px;
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+    /*margin-bottom: -95px;*/
+  }
+
+  .save-add {
+    margin-right: 5px;
+    background-color: green;
+    color:white;
+  }
+
+  .lower-btns {
+    width: 65px;
+    height: 25px;
+    border-radius: 7px;
+    border-style: ridge;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .inputs {
+    display: inline-grid;
+    margin-bottom: 10px;
+  }
+
+  .input-field {
+    border-radius: 3px;
+    border-style: initial;
+    height: 20px;
+    width: 200px;
+  }
+
+  .input-field-lower {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cross-svg {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .creation-message {
+    color: green;
+    font-size: larger;
+  }

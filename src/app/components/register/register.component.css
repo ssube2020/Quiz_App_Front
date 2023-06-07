@@ -1,0 +1,16 @@
+
+.login-form {
+    display: inline-grid;
+    border-style: groove;
+    padding: 40px;
+    border-radius: 3px;
+    background-color: #f2f2f5;
+}
+
+.input-val {
+    margin-bottom: 6px;
+}
+
+.login-btn {
+    cursor: pointer;
+}

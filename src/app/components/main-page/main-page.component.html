@@ -1,0 +1,30 @@
+
+<div *ngIf="isLoggedIn">
+    <div class="body-content" *ngIf="currentMode">
+        <div class="inner-content">
+            <h2> Who Said It? </h2>
+            <p class="question-content"> {{currentQuestion}} </p>
+            <p> {{ possibleAnswer }} </p>
+    
+            <h2 class="answer-result" *ngIf="showAnswerParagraph">
+                Correct! The right answer is: {{ correctAnswer }}
+            </h2>
+            <h2 class="answer-result" *ngIf="showAnswerParagrapWrong">
+                Sorry, you are wrong! The right answer is: {{ correctAnswer }}
+            </h2>
+            <button *ngIf="showNextButton" class="answer-button simple" (click)="GetRandomQuestion()"> Next </button>
+            
+            <div class="answers-content-simple" *ngIf="!showNextButton"> 
+                <button class="answer-button simple" (click)="onAnswerClickYes()"> yes </button>
+                <button class="answer-button simple" (click)="onAnswerClickNo()"> No </button>
+            </div>
+        </div>
+    </div>
+    
+    <app-choice-component *ngIf="!currentMode"> </app-choice-component>
+</div>
+
+
+
+
+

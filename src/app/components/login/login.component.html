@@ -1,0 +1,11 @@
+<div class="body-content quote-content" *ngIf="!isLoggedIn">
+    <div class="inner-content login-form">
+      <h2>Log In</h2>
+      <input type="text" placeholder="username" [(ngModel)]="username" class="input-val">
+      <input type="text" placeholder="password" [(ngModel)]="password" class="input-val">
+  
+  
+      <button (click)="login()" class="login-btn">Login</button>
+      <p routerLink="/register" class="login-btn">dont have account? register here</p>
+    </div>
+</div>
